@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Views/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<header>
+    @Html.ActionLink("Home", "Index", "Home") <br />
+    @Html.ActionLink("AnswerImages", "Index", "AnswerImages") <br />
+   
+
+
+</header>
+
+<body>
+    <div id="main">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        <footer>
+        </footer>
+    </div>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
